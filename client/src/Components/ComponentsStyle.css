@@ -1,0 +1,1350 @@
+.navbar a {
+    color: white !important;
+    font-weight: 700;
+}
+.navbar-light .navbar-toggler-icon {
+    color: white;
+    background: url(./Media/menu.svg);
+}
+
+.navbar-light .navbar-toggler-icon svg {
+    color: white;
+}
+
+.home-header h1 {
+    font-weight: 1000;
+    font-size: 2.6em;
+    color: var(--h1Color);
+}
+
+.home-header {
+    margin-bottom: 10%;
+}
+
+.home-page img {
+    width: 200px;
+    height: 100px;
+}
+
+
+
+#modal-img-input {
+    width: 100% !important;
+    margin-bottom: 15%;
+    margin-top: 7%;
+}
+
+.our-packages h1 {
+    margin-bottom: 5%;
+}
+
+h1 {
+    color: black;
+    margin: 0;
+}
+.our-packages-results {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3%;
+    height: 100%;
+}
+
+
+.single-package {
+    height: 100%;
+}
+
+
+.pack-img {
+    height: 10em;
+    margin-bottom: 2%;
+}
+
+.pack-img img, .pack-img svg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+}
+
+.pack-details-cl1 {
+    display: grid;
+    align-items: center;
+    color: white;
+    text-align: left;
+    height: 50%;
+}
+
+.pack-data {
+    height: 6em;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+}
+
+.pack-details-cl2 {
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: right;
+    height: 50%;
+}
+
+.pack-details-cl2 h4 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin: 0;
+    color: var(--h1Color);
+}
+
+.pack-details-cl2 h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .9em;
+    margin: 0;
+}
+
+
+
+
+.pack-details-cl1 h4 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.pack-details h5 {
+    font-weight: 800;
+    font-size: .8em;
+}
+
+
+
+.label-days {
+    background-color: rgb(221, 118, 0);
+    padding: .5vh;
+    border-radius: var(--borderRadius);
+    font-weight: 600;
+    color: white;
+}
+
+
+.results-page h1 {
+    margin-bottom: 3vh;
+}
+
+#lbl-price {
+    height: 5vh;
+    width: 100px;
+    background-color: green;
+    color: white;
+}
+
+
+
+.profile {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--borderRadius);
+    padding: 2%;
+    box-shadow: 0px 5px 20px rgb(179, 178, 178);
+    display: grid;
+    row-gap: 4vh;
+    padding-bottom: 4vh;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    border: 1px solid grey;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10%;
+    background: url(./Media/profilepictext.jpg);
+    background-size: cover;
+    background-position: -25px;
+}
+
+.profile-details {
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.profile-details button svg {
+    margin-left: 5%;
+}
+
+.profile-details h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.profile-details p {
+    opacity: 50%;
+    font-size: .8em;
+    letter-spacing: .8vw;
+}
+
+.profile-details button {
+    border-radius: 50px;
+    width: 45%;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 3%;
+    color: white;
+    background-color: rgb(1, 110, 173);
+}
+.options-section {
+    padding: 3%;
+}
+
+.options-section svg:nth-child(3) {
+    justify-self: right;
+}
+
+.options-section h5 {
+    letter-spacing: 3px;
+    font-size: .8em;
+    opacity: 80%;
+    margin-bottom: 2vh;
+}
+
+.options-section section {
+    display: grid;
+    grid-template-columns: 8% 1fr 8%;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.options-section h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.settings-options {
+    display: grid;
+    row-gap: 2vh;
+    margin-top: 3.5vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2vh;
+}
+
+.options-normal {
+    display: grid;
+    row-gap: 2vh;
+    margin-top: 3.5vh;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vh;
+}
+
+.settings-options section {
+    padding: 2%;
+    background-color: white;
+    border-radius: var(--borderRadius);
+    align-items: center;
+    cursor: pointer;
+}
+
+.settings-options h5 {
+    font-size: 1.1em;
+}
+
+.settings-options section h5 {
+    margin: 0;
+}
+
+.settings-options section svg {
+    width: 100%;
+    margin: auto;
+}
+
+.settings-page h4 {
+    margin: 0;
+}
+
+.settings-display {
+    margin-top: 3vh;
+}
+
+
+.edit-user-page {
+    margin-top: 4vh;
+}
+
+
+.update-section {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr 40%;
+    column-gap: 3%;
+    margin-top: 2vh;
+}
+
+.update-section label {
+    grid-row: 1;
+}
+
+.update-section h3 {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    padding-left: 5%;
+    font-size: .8em;
+}
+
+.update-section .btn-primary {
+    grid-row: 2;
+    width: 100%;
+}
+
+
+.list-packages {
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: var(--borderRadius);
+}
+
+.list-title {
+    display: grid;
+    grid-template-columns:1fr 1fr 20%;
+    font-weight: 800;
+    text-transform: uppercase;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.list-title p {
+    margin: 0;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 20%;
+    font-weight: 400;
+    align-items: center;
+}
+
+.service-box {
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    margin-bottom: 2vh;
+    column-gap: 2vw;
+    text-align: center;
+}
+
+.service-box p {
+    align-self: center;
+}
+
+.remove-btn {
+    box-shadow: 0.0rem 0.0rem .8rem var(--colorPrimary600);
+    color: var(--colorPrimary600);
+    text-align: center;
+    border: none;
+    border-radius: var(--borderRadius);
+    background-color: white;
+}
+
+.add-btn {
+    box-shadow: 0.0rem 0.0rem .8rem var(--colorPrimary425);
+    color: var(--colorPrimary425);
+    background-color: white;
+    text-align: center;
+    border: none;
+    border-radius: var(--borderRadius);
+    padding-right: 3%;
+    padding-left: 3%;
+    text-align: center;
+    height: 4vh;
+}
+
+
+
+.service-item {
+    border-radius: var(--borderRadius);
+    padding-left: 2%;
+    height: 2em;
+    display: grid;
+    grid-template-columns: 1fr 15%;
+    align-items: center;
+    background-color: white;
+    box-shadow:  10px 7.5px 15px #bababa;
+}
+
+.service-item path {
+    color: rgb(216, 39, 39);
+}
+
+.service-item p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.service-item section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-services section {
+    margin-bottom: 3%;
+}
+
+
+
+.services hr {
+    margin-top: 10%;
+}
+
+.add-service {
+    grid-column: 2;
+}
+
+.list-services .header {
+    display: grid;
+    grid-template-columns: 1fr 10%;
+    align-items: center;
+}
+.add-service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--borderRadius);
+    color: rgb(112, 129, 224);
+}
+
+.service-item input {
+    border: none;
+}
+
+.service-item input:focus {
+    
+}
+
+.add-service path {
+    color: rgb(22, 79, 110);
+}
+
+
+.img-upload-form h5 {
+    text-align: center;
+}
+
+.img-pack {
+    margin-top: 5%;
+}
+
+.img-pack img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+}
+
+.edit-package .img-pack {
+    width: 100%;
+    height: 2em;
+}
+
+
+.package-header h1 {
+    font-family: 'Poppins', cursive;
+    font-weight: 800;
+    font-size: 1.4em;
+}
+
+.package-header p {
+    opacity: 50%;
+    font-weight: 600;
+    font-size: .8em;
+    margin: 0;
+}
+.package-header {
+    line-height: 100%;
+    margin-bottom: 5%;
+}
+
+.package-imgs img {
+    width: 100%;
+    object-fit: cover;
+    height: 8em;
+    border-radius: var(--borderRadius);
+}
+
+.package-imgs {
+    margin-bottom: 5%;
+}
+
+.package-info {
+    display: grid;
+    grid-template-columns: 1fr 15% 25%;
+    column-gap: 3%;
+    font-size: .7em;
+    height: 3.5em;
+    margin-bottom: 5%;
+}
+
+.package-info section {
+    background-color: white;
+    border-radius: var(--borderRadius);
+    line-height: 1em;
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.package-info p {
+    margin: 0;
+    opacity: 50%;
+    font-size: .85em;
+    font-weight: 600;
+}
+
+.package-info section:nth-child(1) {
+    text-align: left;
+    padding-left: 6%;
+}
+
+.package-info section:nth-child(2) div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+}
+
+.package-info section:nth-child(2) div svg {
+    font-size: 1.3em;
+    margin-left: 20%;
+    opacity: 50%;
+}
+.package-info section:nth-child(2) h4{
+    font-size: 1.8em;
+    text-align: right;
+}
+
+.package-info h4 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.package-info span {
+    opacity: 70%;
+    font-size: .8em;
+}
+
+.package-description, .package-services, .package-services {
+    background-color: white;
+    border: 5px solid var(--secColor);
+    border-radius: var(--borderRadius);
+    padding: 5%;
+    font-size: .85em;
+    font-weight: 600;
+    padding-bottom: 2%;
+    margin-bottom: 6%;
+}
+
+.package-header {
+    width: 100%;
+}
+
+.package-header img:hover {
+    opacity: 100%;
+        filter: blur(0);
+        -moz-filter: blur(0);
+        -o-filter: blur(0);
+        -ms-filter: blur(0);
+        z-index: 20;
+        height: 20em;
+}
+
+.header-details {
+    width: 100%;
+    height: 8em;
+    position: relative;
+    overflow:hidden;
+    border-radius: var(--borderRadius);
+}
+
+
+.header-details img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 60%;
+    filter: blur(15px);
+    position: absolute;
+   -moz-filter: blur(10px);
+   -o-filter: blur(15px);
+   -ms-filter: blur(15px);
+   border-radius: var(--borderRadius);
+   margin:-1px;
+   padding:1px;
+}
+
+
+.header-details h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.header-details p {
+    display: none;
+}
+
+
+
+.package-data {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 4em;
+    row-gap: 15%;
+    column-gap: 2%;
+    margin-top: 5%;
+    align-items: center;
+}
+
+.package-data h3 {
+    color: white;
+    opacity: 100%;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+
+.description h2 {
+    color: var(--h1Color);
+    margin-top: 10%;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description p {
+    color: white;
+    text-justify: newspaper;
+}
+
+.request {
+    margin-top: 10%;
+}
+
+
+.services-included h2 {
+    font-weight: 800;
+    text-align: center;
+    margin-top: 5%;
+    color: var(--mainColor);
+}
+
+.list-service services {
+    display: grid;
+    column-gap: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.service-item {
+    height: min-content;
+    line-height: 100%;
+    padding: 2%;
+}
+
+.s-item {
+    color: black;
+    border-radius: var(--borderRadius);
+    border: 3px solid white;
+    padding: 2%;
+    white-space: nowrap;
+    font-weight: 800;
+    color: white;
+    width: min-content;
+    height: fit-content;
+    margin-right: 2%;
+}
+
+.package-data section {
+    border: 2px solid white;
+    border-radius: var(--borderRadius);
+    position: relative;
+    padding: 6%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+    text-align: center;
+}
+.people h3 {
+    color: var(--h1Color);
+    font-weight: 800;
+}
+
+.price {
+    grid-column: span 2;
+}
+
+.package-data strong {
+    opacity: 100%;
+    font-weight: 800;
+    color: var(--h1Color);
+}
+
+.package-description p:nth-child(1), .package-services p:nth-child(1) {
+    opacity: 50%;
+    font-size: .9em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 1.5%;
+}
+
+.package .service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.package-services div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-weight: 800;
+}
+
+.services-included span {
+    height: 1.3em;
+}
+
+.services-not-included span {
+    height: 1.3em;
+}
+
+.services-included svg {
+    margin-right: 10%;
+    color: green;
+}
+.services-not-included svg {
+    margin-left: 10%;
+    color: rgb(255, 0, 0);
+}
+
+
+.selected {
+    background-color: var(--h1Color) !important;
+    color: white;
+}
+
+.booking-request {
+    text-align: right;
+    display: grid;
+    row-gap: 5%;
+}
+
+.booking-request .btn-primary {
+    background-color: rgb(93, 158, 255);
+    font-weight: 600;
+    box-shadow:  4px 4px 9px #bababa;
+}
+
+#modal-title {
+    margin-bottom: 5% !important;
+}
+
+
+.request-form textarea {
+    height: 10em;
+    padding: 5%;
+}
+
+.request-form form section {
+    margin-bottom: 5%;
+}
+
+.single-message {
+    display: grid;
+    grid-template-columns: 1fr 15%;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: var(--borderRadius);
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
+}
+
+
+
+.single-message h5 {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: .8em;
+    margin: 0;
+}
+
+.single-message h5 span {
+    font-weight: 500;
+    opacity: 70%;
+    font-style: italic;
+}
+
+.message-details {
+    line-height: 90%;
+}
+
+.message-details p {
+    margin: 0 ;
+    font-weight: 600;
+    opacity: 60%;
+    font-size: .8em;
+}
+
+.single-message path {
+    color: var(--secColor);
+}
+
+.single-message svg {
+    height: 2em;
+    grid-column: 3 !important;
+}
+
+.messages {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 7.5%;
+}
+
+
+.notification {
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    background-color: red;
+    border-radius: 50%;
+    top: -15%;
+    right: -1.5%;
+}
+
+
+
+.message-read {
+    background-color: white !important;
+}
+
+.chat-page {
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--borderRadius);
+}
+
+.chat-details {
+    border-radius: var(--borderRadius);
+    background-color: white;
+}
+
+.chat-details {
+    display: grid;
+    grid-template-columns: 1fr 55% 25%;
+    align-items: center;
+    column-gap: 4%;
+    padding: 4%;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+    padding-left: 1%;
+}
+
+.chat-details h4, .chat-details p {
+    margin: 0;
+}
+
+.chat-details p {
+    opacity: 70%;
+}
+.chat-details strong {
+
+}
+
+.chat-details {
+    line-height: 60%;
+}
+
+.chat-details svg {
+    justify-self: center;
+    font-size: 1.8em;
+}
+
+
+.chat-form {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.chat-form .input-text {
+    
+}
+
+.chat-form form {
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: 1fr 20%;
+}
+
+.chat-details section {
+    display: grid;
+    grid-template-rows: 1fr 30%;
+    row-gap: 5%;
+}
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 7.5%;
+    width: 100%;
+    max-height: 85%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.single-chat-sender {
+    border-radius: 10px 10px 10px 0%;
+    background-color: var(--h1Color);
+    color: rgb(255, 255, 255);
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    width: auto;
+    max-width: 80%;
+    margin-top: 2%;
+    flex: 2;
+    margin-right: 20%;
+    position: relative;
+}
+
+.date-sent {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    font-size: .75em;
+    opacity: 60%;
+    font-weight: 400;
+}
+
+.single-chat-receiver p {
+    padding-bottom: 2%;
+}
+
+.single-chat-sender p {
+    padding-bottom: 2%;
+}
+
+
+
+
+.single-chat-receiver {
+    border-radius: 10px 10px 0px 10px;
+    background-color: var(--secColor);
+    color: rgb(255, 255, 255);
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    width: auto;
+    max-width: 80%;
+    margin-top: 2%;
+    margin-left: 20%;
+    position: relative;
+}
+
+.single-chat-receiver:nth-child(1) {
+    margin-top: 6%;
+}
+
+.single-chat-sender h5 {
+    color: white;
+    font-weight: 800;
+    opacity: 70%;
+}
+
+
+.single-chat-receiver p {
+    margin: 0;
+}
+
+.single-chat-sender p {
+    margin: 0;
+}
+
+.status-booking {
+    color: green;
+    text-align: center;
+    margin: 0;
+}
+
+.message-package img {
+    width: 100%;
+    height: 8em;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+    margin-top: 3%;
+}
+
+.message-package h2 {
+    margin-top: 4%;
+}
+
+.options-chat {
+    border: none;
+    background: none;
+}
+
+.delete-chat-btn {
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    border-radius: var(--borderRadius);
+    border: none;
+    width: 60%;
+    margin: auto;
+}
+
+.delete-chat {
+    text-align: center;
+}
+
+.log-form form{
+    display: grid;
+    row-gap: 5%;
+}
+
+.log-form .sm-label {
+    font-size: 1em;
+    margin-bottom: 1.5%;
+}
+
+.why-us {
+    background-color: var(--h1Color);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 20%;
+    margin-top: 5%;
+}
+
+.why-us h5 {
+    font-weight: 400 !important;
+}
+
+.why-us h5 strong {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.sec {
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    padding: 20%;
+}
+
+.me-auto a {
+    font-weight: 300;
+    margin: 0;
+}
+
+.svg-section {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background: url(./Media/wp.png);
+    height: 35%;
+    background-size: cover;
+    left: 0;
+    z-index: 0;
+}
+
+
+.home-page .carousel {
+    margin-top: 30%;
+}
+
+.slider {
+    margin-top: 20%;
+}
+
+.slider-section {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.slider-item img {
+    width: 100%;
+    min-height: 50%;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+}
+
+.slider-item {
+    margin-right: 6%;
+    flex-shrink: 0;
+    width: 60%;
+    height: 100%;
+    border-radius: var(--borderRadius);
+}
+
+.slider-item .pack-data {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6%;    
+}
+
+
+.slider-item .pack-details-cl1 h4, .slider-item .pack-details-cl1 h5 {
+    font-size: 1em;
+}
+
+.slider-item .pack-details-cl2 h4 {
+    font-size: 1.2em;
+}
+
+.chat-options {
+    display: none;
+}
+
+
+.services {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+.services .badge {
+    padding: 5%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+.services h2 {
+    color: white;
+    font-weight: 800;
+}
+
+.not-included .badge {
+    padding: 5%;
+    background-color: var(--h1Color) !important;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+
+
+.MuiBox-root .log-form .sm-label {
+    color: black;
+}
+
+.MuiBox-root .log-form .input-text {
+    border-radius: var(--borderRadius);
+    border: 1px solid grey;
+}
+
+.MuiBox-root .h5-response {
+    color: grey;
+    font-size: 1em;
+}
+
+.MuiBox-root .sub-title {
+    color: black;
+    font-weight: 700;
+}
+
+.MuiBox-root .h5-response a {
+    text-decoration: none;
+    color: var(--h1Color);
+}
+
+.create-booking {
+    height: 100%;
+    border-radius: var(--borderRadius);
+    background-color: var(--h1Color);
+    display: flex !important;
+    text-align: center;
+    align-items: center;
+    font-size: .8em;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    border: none;
+}
+
+#mod {
+    height: 100%;
+}
+
+.booking-form .input-label {
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.booking-form form {
+    display: grid;
+    row-gap: 2%;
+}
+
+.booking-form textarea {
+    height: 8em;
+    resize: none;
+    padding: 2%;
+}
+
+.price-booking section {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    column-gap: 3%;
+}
+
+.booking-form button {
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.single-booking {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    margin-bottom: 4%;
+    background-color: rgb(255, 255, 255);
+    border-radius: var(--borderRadius);
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
+}
+
+.single-booking h5 {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.delete-btn {
+    margin: 0;
+    border: none;
+    background-color: red;
+    align-self: center;
+    align-self: center;
+    color: white;
+    border-radius: var(--borderRadius);
+}
+
+.pending {
+    color: orange;
+    font-weight: 800;
+}
+
+.confirmed {
+    color: var(--h1Color);
+    font-weight: 800;
+}
+
+.single-booking #mod {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.notes, .date, .price-s, .payment {
+    background-color: white;
+    padding: 2%;
+    border-radius: var(--borderRadius);
+    margin-top: 5%;
+}
+
+.notes h4, .price-s h4, .date h4, .payment {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.price-s p {
+    font-size: 1.4em;
+    text-align: center;
+    color: var(--secColor);
+}
+
+.payment {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.payment  strong {
+    font-size: 1.8em;
+    color: var(--h1Color);
+}
+.payment p {
+    margin: 0;
+}
+
+.payment .warning {
+    color: red;
+}
+
+.pay-btn {
+    width: 100%;
+    background-color: #0079C1;
+    height: 3em;
+    border-radius: var(--borderRadius);
+    border: none;
+    margin-top: 2%;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay-btn svg {
+    font-size: 1.2em;
+    margin-right: 2%;
+}
+
+.booking-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+}
+
+#pwdnote, #confirmnote, #emConfNote {
+    color: white;
+}
+
+.signForm form section {
+    margin-bottom: 3%;
+}

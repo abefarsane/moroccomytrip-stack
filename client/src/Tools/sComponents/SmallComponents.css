@@ -1,0 +1,24 @@
+.search-bar form {
+    display: grid;
+    grid-template-columns: 1fr 24%;
+    background-color: white;
+    border-radius: var(--borderRadius);
+    padding: 1%;
+}
+
+.search-bar form button {
+    height: 100%;
+    border: none;
+    background-color: white;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--mainColor);    
+}
+
+.search-bar .input-text {
+    border-radius: 0;
+}
+
+.slider-item {
+    cursor: pointer;
+}

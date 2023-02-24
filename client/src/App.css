@@ -1,0 +1,328 @@
+.navbar-nav a {
+    text-decoration: none;
+    color: grey;
+    margin-bottom: .8vh;
+}
+
+.navbar-nav a:checked {
+    color: grey;
+}
+
+nav {
+    margin-bottom: 2vh;
+}
+
+
+.App {
+    width: 85%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+
+.modal-custom {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.modal-custom .btn-primary {
+    height: 4vh;
+}
+
+#input-username {
+    margin-bottom: 5%;
+}
+
+.modal-custom h4 {
+    margin-top: 5%;
+}
+
+#modal-custom .sm-comment {
+    margin-bottom: 0;
+}
+
+.modal-custom p {
+    margin-bottom: 0;
+}
+
+.modal-header {
+    
+}
+.delete-package-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colorPrimary1);
+    color: white;
+    font-weight: 600;
+    padding: 2%;
+    width: 95%;
+    margin: auto;
+    border-radius: var(--borderRadius);
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+
+
+
+
+#modal-lbl {
+    margin-bottom: 1%;
+    margin-top: 3%;
+    opacity: 50%;
+    font-size: .8em;
+
+}
+
+#pwd-update section {
+    display: grid;
+    row-gap: 4%;
+}
+
+#pwd-update .btn-secondary {
+    margin-top: 12%;
+}
+
+
+.manage-package-head {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    column-gap: 3%;
+}
+
+.c-modal-backdrop {
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.664);
+}
+
+.c-modal-content-wrapper {
+    z-index: 12;
+    border-radius: var(--borderRadius);
+    position: fixed;
+    width: 95vw;
+    height: 800px;
+    background-color: white;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 50px;
+}
+
+.modal-fullscreen {
+    height: 120vh !important;
+}
+
+
+.sm-comment {
+    color: white;
+    font-weight: 600;
+    font-size: .9em;
+}
+
+#descr-textarea {
+    height: 100px;
+}
+
+::placeholder {
+    font-size: .8em;
+}
+
+#successmsg {
+    width: 100%;
+    background-color: var(--colorPrimary425);
+    color: white;
+    font-weight: 300;
+    font-size: .6em;
+    border-radius: var(--borderRadius);
+    padding-left: 5%;
+    margin: 0;
+    margin-bottom: 4%;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.valid {
+    color: rgb(15, 131, 15);
+    margin-left: 0.25rem;
+}
+.invalid-input {
+    border: 1px solid red;
+}
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+.hide {
+    display: none;
+}
+
+#pwdnote,#confirmnote, #emConfNote{
+    font-size: .7em;
+    opacity: 50%;
+    text-align: left;
+    margin-top: 2%;
+}
+
+#modal-title {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 800;
+}
+
+.btn-primary {
+    border-radius: var(--borderRadius);
+    background-color: var(--colorPrimary2);
+    color: white;
+    border: none;
+    height: 2.5em;
+    width: 100%;
+    background: var(--colorPrimary2);
+}
+.btn-secondary {
+    border-radius: var(--borderRadius);
+    background-color: var(--colorPrimary5);
+    color: white;
+    border: none;
+    height: 4vh;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: var(--secColor);
+}
+
+.chat-btn {
+    background-color: var(--h1Color);
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: var(--borderRadius);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-weight: 600;
+}
+
+.buy-btn {
+    background-color: rgb(27, 220, 127);
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: var(--borderRadius);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.valid {
+    color: rgb(15, 131, 15);
+    margin-left: 0.25rem;
+}
+.invalid-input {
+    border: 1px solid red;
+}
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+.hide {
+    display: none;
+}
+
+#pwdnote,#confirmnote, #emConfNote{
+    font-size: .7em;
+    opacity: 50%;
+    text-align: left;
+    margin-top: 2%;
+}
+
+.input-label {
+    font-size: .9em;
+}
+
+.sub-title {
+    color: white;
+    font-size: .9em;
+    margin-top: 3%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+#errmsg {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50%;
+    max-height: 80%;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    border-radius: var(--borderRadius);
+    margin: 0;
+    margin-bottom: 4%;
+    padding: 10%;
+    font-weight: 600;
+    font-size: .8em;
+    padding: 5%;
+}
+
+#successmsg {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    color: white;
+    font-weight: 300;
+    border-radius: var(--borderRadius);
+    margin: 0;
+    margin-bottom: 4%;
+    padding: 10%;
+    font-weight: 600;
+    font-size: .7em;
+    padding: 5%;
+}
+
+
+.log-form .label {
+    margin-top: 5%;
+    color: black;
+    opacity: 50%;
+    font-size: .9em;
+}
+
+.no-path {
+    width: 85%;
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.no-path h1 {
+    font-weight: 300;
+}
+
+.form-label-sec {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}

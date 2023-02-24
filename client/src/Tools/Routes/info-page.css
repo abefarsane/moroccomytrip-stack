@@ -1,0 +1,27 @@
+.not-auth-page, .already-logged {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin: auto;
+    padding: 3%;
+    border-radius: 10px;
+    margin-top: 15%;
+}
+
+.not-auth-page #secondary-btn {
+    align-self: center;
+    grid-column: 1;
+    width: 40%;
+}
+
+.not-auth-page h1, .already-logged h1 {
+    font-weight: 800;
+}
+
+.already-logged #secondary-btn {
+    grid-column: 1;
+    text-align: left;
+    width: 40%;
+}

@@ -1,0 +1,118 @@
+* {
+    font-family: 'Poppins';
+}
+
+:root {
+    --borderRadius: 7.5px;
+    --borderDensity: 0.5px;
+
+    --primaryColor: #C33149;
+    --secondaryColor: #A8C256;
+    --terziaryColor: #F3D9B1;
+    --fColor: #C29979;
+    --lastColor: #A22522;
+
+    
+    --lineHeightSm: 1.1;
+    --fontSizeSM: .9em;
+    --fontSizeSL: 1.4em;
+    --lineHeightMd: 1.8;
+    --transitionDuration: 300ms;
+    --transitionTF: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+
+    --h1Color: #03C988;
+    --mainColor: #14283A;
+    --secColor: #1C82AD;
+
+    --colorPrimary1: #000000;
+    --colorPrimary2: #0E402D;
+    --colorPrimary3: #295135;
+    --colorPrimary4: #5A6650;
+    --colorPrimary5: #707070;
+    
+    --inputTransitionDuration: var(--transitionDuration);
+    --inputTransitionTF: var(--transitionTF);
+}
+
+#root, html {
+    background-color: var(--mainColor);
+}
+
+.modal-content {
+    border-radius: var(--borderRadius) !important;
+    padding: 2%;
+    padding-bottom: 5%;
+    background-color: #ececec !important;
+}
+
+.modal-body {
+    padding: 0% !important;
+}
+
+.modal-title {
+    display: flex;
+}
+
+
+
+.input-text {
+    padding-left: 3%;
+    width: 100%;
+    border: none;
+    height: 2.25em;
+    font-weight: 600;
+    border-radius: var(--borderRadius);
+    outline: none;
+    background-color: white;
+}
+
+
+@keyframes box-shadow-input {
+    to {
+        box-shadow:  5px 5px 20px var(--colorPrimary1)
+    }
+}
+
+.font-awesome-btn {
+    border-radius: var(--borderRadius);
+    border: none;
+    background-color: var(--colorPrimary3);
+    color: white
+}
+
+
+.h1-header {
+    color: var(--h1Color);
+    font-weight: 1000;
+    font-size: 2em;
+}
+
+.h2-title {
+    color: var(--mainColor);
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.h5-response {
+    color: white;
+    opacity: 100%;
+}
+
+.input-text-dark {
+    width: 100%;
+    border: 4px solid var(--h1Color);
+    border-radius: var(--borderRadius);
+    outline: none
+}
+
+.sm-label {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/poppins');
