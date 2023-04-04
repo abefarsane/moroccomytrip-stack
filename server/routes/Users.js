@@ -237,7 +237,9 @@ router.get('/userById/:id', async (req,res) => {
 
     const id = req.params.id
 
-    const user = await Users.findByPk(id)
+    const user = await Users.findByPk(id, {
+        attributes: {exclude: ['pwd', 'admin']}
+    })
     res.json(user)
 
 })
