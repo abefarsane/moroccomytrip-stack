@@ -205,15 +205,15 @@ router.put("/update", validateToken, async (req, res) => {
 
 })
 
-router.post('/signup',   (req, res) => {
+router.post('/signup', async  (req, res) => {
 
     let { username, email, pwd} = req.body;
 
-    bcrypt.genSalt(10,  (err, salt) => {
-        bcrypt.hash(pwd, salt, (err, hash) => {
+    await bcrypt.genSalt(10,  (err, salt) => {
+        bcrypt.hash(pwd, salt, async (err, hash) => {
             
             
-            Users.create({
+            await Users.create({
                 username: username,
                 email: email,
                 pwd: hash,

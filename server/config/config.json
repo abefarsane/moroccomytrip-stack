@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "12345678",
-    "database": "moroccomytrip",
-    "host": "localhost",
+    "username": "b26f3e77171b08",
+    "password": "578a16f3",
+    "database": "heroku_282a13f0ca0dce5",
+    "host": "eu-cdbr-west-03.cleardb.net",
     "dialect": "mysql"
   },
   "test": {
