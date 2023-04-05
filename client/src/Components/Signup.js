@@ -7,13 +7,14 @@ import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icon
 
 export default function Signup() {
 
+    axios.defaults.withCredentials = true
+
     const { api } = useContext(AuthContext)
 
     const [username, setUsername] = useState('')
     const [usernameFocus, setUsernameFocus] = useState(false)
     const [validUsername, setValidUsername] = useState(false)
 
-    axios.defaults.withCredentials = true
 
     const [email, setEmail] = useState('')
 
@@ -45,7 +46,6 @@ export default function Signup() {
     const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/
 
     const navigate = useNavigate();
-    const {setAuthState} = useContext(AuthContext)
 
     /*VALIDATION FOR USERNAME, PASSWORD AND EMAIL*/ 
 
@@ -73,26 +73,32 @@ export default function Signup() {
 
     //onsubmit stuff that happens
 
-    const handleSubmit = (e) => {
+    const handleSubmit =  (e) => {
 
         const password = PWD_REGEX.test(pwd)
 
+        e.preventDefault()
 
         if (!emailMatch || !password || !matchPwd || !username || !validMatch) {
-            e.preventDefault()
             setErrMsg("Fill the inputs correctly by following the indications.");
             return;
         } else {
-            e.preventDefault()
             const user = {
                 email: email,
                 username: username,
                 pwd: pwd
             }
-            axios.post(`${api}/auth/signup`, user ).then((response) => {
+             axios.post(`${api}/auth/signup`, user, {
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            .then((response) => {
                 if(response.data.status) {
                     navigate('/login');
-                } 
+                } else if (response.data.error) {
+                    setErrMsg(response.data.error)
+                }
             })
         }
     } 

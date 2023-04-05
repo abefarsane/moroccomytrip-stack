@@ -120,12 +120,6 @@ nav {
 }
 
 
-.sm-comment {
-    color: white;
-    font-weight: 600;
-    font-size: .9em;
-}
-
 #descr-textarea {
     height: 100px;
 }
@@ -171,6 +165,12 @@ nav {
     opacity: 50%;
     text-align: left;
     margin-top: 2%;
+    color: black;
+    font-weight: 600;
+}
+
+.search-bar .input-text {
+    border: none !important;
 }
 
 #modal-title {
@@ -181,12 +181,12 @@ nav {
 
 .btn-primary {
     border-radius: var(--borderRadius);
-    background-color: var(--colorPrimary2);
-    color: white;
+    background-color: #FE6F5E;
+    color: #ffffff;
+    font-weight: 700;
     border: none;
     height: 2.5em;
     width: 100%;
-    background: var(--colorPrimary2);
 }
 .btn-secondary {
     border-radius: var(--borderRadius);
@@ -255,8 +255,9 @@ nav {
 }
 
 .sub-title {
-    color: white;
+    color: var(--h1Color);
     font-size: .9em;
+    opacity: 50%;
     margin-top: 3%;
 }
 

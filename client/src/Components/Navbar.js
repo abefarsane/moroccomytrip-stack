@@ -35,7 +35,7 @@ export default function NavBar() {
                             
                         ) : ( 
                             <>
-                                <Link to="/settings">Settings</Link>
+                                <Link to="/dashboard">Dashboard</Link>
                                 <Link onClick={handleLogout}>Logout</Link>
                             </>
                         )}

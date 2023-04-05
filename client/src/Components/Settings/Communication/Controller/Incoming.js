@@ -105,7 +105,7 @@ export default function Incoming() {
                     })
 
                 ) : (
-                    <p>No booking requests to show.</p>
+                    <h5 className='h5-response'>No bookings requests to show</h5>
                 )
             }
     

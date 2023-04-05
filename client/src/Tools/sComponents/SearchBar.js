@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export default function SearchBar() {
 
@@ -31,7 +31,7 @@ export default function SearchBar() {
                         setSearch(e.target.value)
                     }}
                 />
-                <button>Search</button>
+                <button><span>Search</span><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
             </form>
         </div>
     )

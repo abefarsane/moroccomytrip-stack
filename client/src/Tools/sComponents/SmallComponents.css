@@ -1,9 +1,10 @@
 .search-bar form {
     display: grid;
-    grid-template-columns: 1fr 24%;
+    grid-template-columns: 1fr 20%;
     background-color: white;
     border-radius: var(--borderRadius);
     padding: 1%;
+    border: 5px solid var(--h1Color);
 }
 
 .search-bar form button {
@@ -12,8 +13,17 @@
     background-color: white;
     font-size: 1em;
     font-weight: 700;
-    color: var(--mainColor);    
+    color: var(--h1Color);   
+    border: 5px solid var(--h1Color); 
+    padding: 2%;
+    border-radius: var(--borderRadius);
 }
+
+.search-bar form button svg {
+    font-size: 1.3em;
+    margin-left: 5%;
+}
+
 
 .search-bar .input-text {
     border-radius: 0;

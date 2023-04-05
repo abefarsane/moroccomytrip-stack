@@ -12,6 +12,12 @@
         justify-content: right;
     }
 
+    .data {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        column-gap: 2%;
+    }
+
     .App {
         width: 60%;
     }
@@ -181,6 +187,12 @@
         height: 4em;
     }
 
+    .data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2%;
+    }
+
     .package-header img:hover {
         opacity: 100%;
             filter: blur(0);
@@ -221,8 +233,94 @@
         column-gap: 2%;        
     }
 
+    .navbar {
+        padding: .5% 2% .5% 2%;
+        border-radius: var(--borderRadius);
+        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+        box-sizing: border-box;
+        color: rgba(0,0,0,0.8);
+        backdrop-filter: blur(33px);
+        background-blend-mode: overlay;
+    }
+
+    .home-img {
+        display: flex !important;
+        background: url('./Components/Media/home-2.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: 30%;
+        border-radius: var(--borderRadius);
+        position: relative;
+    }
+
+    .home-img-over {
+        position: inherit;
+        background: url('./Components/Media/home-2-only-person.png');
+        width: 100%;
+        background-color: transparent;
+        background-size: cover;
+        height: 25em;
+        background-position: 30%;
+        background-repeat: no-repeat;
+        z-index: 2;
+        margin: 0;
+    }
+    .home-header {
+        margin: 0;
+    }
+
+    .home-header {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        
+        z-index: 1;
+    }
+    .home-header h1 {
+        
+        color: rgb(255, 255, 255);
+        margin: 0;
+        font-size: 3em;
+        z-index: -1;
+    }
+
+    .search-bar {
+        border: none;
+    }
+
+    .search-section {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        width: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+        box-sizing: border-box;
+        color: rgba(0,0,0,0.8);
+        backdrop-filter: blur(33px);
+        background-blend-mode: overlay;
+        z-index: 51;
+    }
+
     .package-data {
         margin: 0;
+    }
+
+    .badge {
+        font-size: 1.1em;
+    }
+
+
+    .request-booking {
+        margin: 0;
+    }
+
+    .sm-comment {
+        font-size: 1.2em !important;
     }
 
 
@@ -285,5 +383,11 @@ and (max-device-width : 1224px) {
     }
     .svg-section {
         display: none;
+    }
+    .data {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        column-gap: 2%;
+        margin-top: 10%;
     }
 }

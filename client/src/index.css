@@ -21,9 +21,11 @@
     --transitionTF: cubic-bezier(0.645, 0.045, 0.355, 1);
 
 
-    --h1Color: #03C988;
-    --mainColor: #14283A;
-    --secColor: #1C82AD;
+    --h1Color: #9b3400;
+    --mainColor: #ffffff;
+    --secColor: #000000;
+
+    --smText: #FF8200;
 
     --colorPrimary1: #000000;
     --colorPrimary2: #0E402D;
@@ -37,6 +39,19 @@
 
 #root, html {
     background-color: var(--mainColor);
+}
+
+h4 {
+    color: var(--h1Color);
+}
+
+h5 {
+    color: var(--smText);
+}
+
+h2 {
+    font-weight: 900 !important;
+    color: var(--h1Color);
 }
 
 .modal-content {
@@ -64,6 +79,7 @@
     font-weight: 600;
     border-radius: var(--borderRadius);
     outline: none;
+    border: 2px solid var(--h1Color);
     background-color: white;
 }
 
@@ -95,8 +111,8 @@
 }
 
 .h5-response {
-    color: white;
-    opacity: 100%;
+    color: var(--h1Color);
+    font-weight: 700;
 }
 
 .input-text-dark {
@@ -106,10 +122,18 @@
     outline: none
 }
 
+.sm-comment {
+    color: var(--h1Color);
+    opacity: 75%;
+    font-weight: 600;
+    font-size: .9em;
+}
+
 .sm-label {
-    color: white;
+    color: var(--h1Color);
     text-transform: uppercase;
     font-weight: 600;
+    opacity: 75%;
     margin: 0
 }
 

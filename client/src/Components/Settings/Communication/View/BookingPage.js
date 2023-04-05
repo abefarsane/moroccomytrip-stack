@@ -7,6 +7,8 @@ import PayPalProvider from '../../../../Tools/Transactions/PayPal/PayPalProvider
 import { AuthContext } from '../../../../Tools/Context/AuthContext';
 import io from 'socket.io-client'
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import PDF, { Text, AddPage, Line, Image, Table, Html } from 'jspdf-react'
+ 
 
 export default function BookingPage() {
 
@@ -15,6 +17,8 @@ export default function BookingPage() {
     const [message, setMessage] = useState("")
     const [chatId, setChatId] = useState()
     const [status, setStatus] = useState("PENDING_PAYMENT")
+
+    const [clientData, setClientData] = useState()
 
     const { authState, setSocket, api } = useContext(AuthContext)
     const socket = io.connect(api)
@@ -74,8 +78,18 @@ export default function BookingPage() {
         })
     }
 
+    const getClientData = async () => {
+        await axios.get(`${api}/auth/userById/${bookingData.clientId}`)
+            .then((response) => {
+                setClientData(response.data)
+            })
+    }
+
     useEffect(() => {
         getClientId()
+        getClientData()
+        console.log(bookingData)
+
     }, [])
 
     const initialOptions = {
@@ -84,15 +98,19 @@ export default function BookingPage() {
         intent: "capture"
     };
 
+    const properties = { header: 'Acme' }
+    const head = [["ID", "Name", "Country"]]
+    const body = [
+        [1, "Shaw", "Tanzania"],
+        [2, "Nelson", "Kazakhstan"],
+        [3, "Garcia", "Madagascar"],
+    ]
+
+
     return (
         <section className='booking-page'>
             <section className='booking-header'>
                 <h1 className='h5-response'> {bookingData.Package?.title} </h1>
-                <button className='btn-secondary' onClick={() => {
-                    navigate(`/chat/${chatId}`)
-                    socket.emit('join_chat', chatId)
-                    setSocket(socket)
-                }}>Chat</button>
             </section>
 
             <section className='contain-booking'>

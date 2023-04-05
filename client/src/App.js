@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './Components/Login';
 import Home from './Components/Home';
 import NavBar from './Components/Navbar';
-import Settings from './Components/Settings'
+import Dashboard from './Components/Dashboard'
 import PrivateRoutes from './Tools/Routes/PrivateRoutes';
 import Package from './Components/Package';
 import Packages from './Components/Packages'
@@ -41,7 +41,7 @@ function App() {
         <Route path='/signup' element={<Signup />} />
 
         <Route element={<PrivateRoutes allowedRoles={[ 2000 ]}/>}>
-          <Route path='/settings' element={<Settings />} />
+          <Route path='/Dashboard' element={<Dashboard />} />
           <Route path='/booking/:id' element={<BookingPage />} />
         </Route>
 

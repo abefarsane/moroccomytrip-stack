@@ -7,7 +7,7 @@ import EditUser from './Settings/User/EditUser'
 import EditPackage from './Settings/Package/EditPackage';
 import Messages from './Settings/Communication/Messages';
 
-export default function Settings( {target}, {trg}) {
+export default function Dashboard( {target}, {trg}) {
 
     const { authState } = useContext(AuthContext)
     const [ toDisplay, setToDisplay ] =  useState(target || <EditUser />)
@@ -19,7 +19,7 @@ export default function Settings( {target}, {trg}) {
 
     return (
         <div className='settings-page'>
-            <h1 className='h1-header'>Settings</h1>
+            <h1 className='h1-header'>Dashboard</h1>
             <p className='sm-comment'>Manage all of your affairs here</p>
 
             <section className={authState.admin ? 'settings-options' : 'settings-options options-normal'}>

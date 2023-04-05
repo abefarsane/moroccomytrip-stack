@@ -1,8 +1,8 @@
-import { faPeopleArrows, faPeopleGroup, faCheck, faPersonWalking, faCircleXmark, faComments } from '@fortawesome/free-solid-svg-icons';
+import { faPeopleArrows, faPeopleGroup, faCheck, faPersonWalking, faCircleXmark, faComments, faMessage } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import React, { Component, useContext, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../Tools/Context/AuthContext';
 import ModalCustom from './ModalCustom'
 import Login from './Login'
@@ -20,6 +20,8 @@ export default function Package() {
     const [ booked, setBooked ] = useState(false)
 
     const { authState, api } = useContext(AuthContext)
+
+    const navigate = useNavigate()
 
     const getPackageDetails = () => {
         axios.get(`${api}/packages/byID/${id}`)
@@ -69,20 +71,22 @@ export default function Package() {
                                 
                             </section>
                         </section>
-                        <section className='package-data'>
-                            <section className='days'>
-                                <h3>For <strong>{pack.duration + (pack.duration > 1 ? " days" : " day")}</strong></h3>
-                            </section>
-                            <section className='people'>
-                                <h3>{pack.people + (pack.people > 1 ? " people" : " person")}</h3>
-                            </section>
-                            <section className='price'>
-                                <h3>Starting from <strong>€{pack.price}</strong></h3>
-                            </section>
-                        </section>
 
-                        <section className='request'>
-                                <ModalCustom btnText={"Start a booking request"} btnClass='chat-btn'>
+                        <section className='data'>
+
+                            <section className='package-data'>
+                                <section className='days'>
+                                    <h3>For <strong>{pack.duration + (pack.duration > 1 ? " days" : " day")}</strong></h3>
+                                </section>
+                                <section className='people'>
+                                    <h3>{pack.people + (pack.people > 1 ? " people" : " person")}</h3>
+                                </section>
+                                <section className='price'>
+                                    <h3>Starting from <strong>€{pack.price}</strong></h3>
+                                </section>
+                            </section>
+                                <section className='request-booking'>
+                                    <ModalCustom btnText={"Start a booking request"} btnClass='chat-btn'>
 
                                 {
                                     authState.status ? (
@@ -107,11 +111,17 @@ export default function Package() {
                                         </>
                                     )
                                 }
-                                </ModalCustom>
-                            </section>
+                                    </ModalCustom>
+                                    <ModalCustom btnText={"Contact us directly"} btnClass='chat-btn'>
+                                        <h2>You can contact us through email or phone call!</h2>
+                                        <p className='sm-comment'>Email<br></br> <strong>younessaflo@gmail.com</strong></p>
+                                        <p className='sm-comment'>Youness Aflousse <br></br> <strong>+39 347 907 4330</strong></p>
+                                    </ModalCustom>
+                                </section>
+                        </section>
                         <section className='description'>
                             <h2>About this package</h2>
-                            <p>{pack.description}</p>
+                            <p className='sm-comment'>{pack.description}</p>
                         </section>
 
                         <section className='service-contain'>
